@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family:'Times New Roman', Times, serif, sans-serif;
+    background-color:rgb(244, 241, 241);
+    color: rgb(20, 14, 14);
+}
+
+/* Hero Section with Background Image */
+.hero {
+    position: relative;
+    background: url('images/background.png') no-repeat center center/cover; /* Ensure image path is correct */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Dark Overlay */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+/* Hero Content */
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #00c6ff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #0072ff;
+}
+
+/* About Section */
+.about {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #444;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #282828;
+    padding: 20px 0;
+    text-align: center;
+}
+/* font setup */
+
+.azeret-mono {
+    font-family: "Azeret Mono", serif;
+    font-optical-sizing: auto;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .nav-container {
+    display: flex;
+    margin: 50px 150px;
+    justify-content: space-between;
+  }
+  
+  .name {
+    color:#282828;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  
+  .btn-primary {
+    border-radius: 8px;
+    padding: 17px 24px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: #0d1321;
+    border-style: none;
+  }
+  
+  .head-container {
+    background-image: url("../assets/Hero-bg.png");
+    padding: 32px 0 32px;
+    text-align: center;
+  }
+  
+  .head-title {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  
+  .head-para {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(13, 19, 33, 1);
+    width: 850px;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  
+  .sec-container {
+    margin: 80px 150px;
+    box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+    border-radius: 16px;
+    background-color: rgba(13, 19, 33, 0.02);
+    padding: 80px;
+  }
+  
+  .layer-part-1 {
+    width: 480px;
+    align-items: center;
+  }
+  
+  .layer-1-head-color {
+    color: rgba(13, 19, 33, 0.7);
+  }
+  
+  .layer-1-head-para {
+    font-size: 16px;
+    font-weight: normal;
+    color: #0d1321;
+    margin-bottom: 32px;
+  }
+  
+  .dev-layer {
+    padding: 48px;
+    justify-content: space-between;
+    margin: 0px 100px;
+    box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+    border-radius: 16px;
+  }
+  
+  .video-container {
+    margin: 80px 150px;
+  }
+  
+  .vid-container {
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  }
+  
+  .vid {
+    border-radius: 16px;
+    margin: auto;
+  }
+  
+  .target-container {
+    justify-content: space-around;
+    gap: 24px;
+  }
+  
+  .target-1-container {
+    padding: 40px;
+    background-color: rgba(255, 76, 30, 0.05);
+    border-radius: 16px;
+  }
+  
+  .target-2-container {
+    padding: 40px;
+    background-color: rgba(0, 76, 232, 0.05);
+    border-radius: 16px;
+  }
+  
+  .target-3-container {
+    padding: 40px;
+    background-color: rgba(255, 223, 0, 0.05);
+    border-radius: 16px;
+  }
+  
+  .container-1 {
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+    padding: 40px;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .support-container {
+    background-image: url("../assets/handshake.jpg");
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 64px 48px;
+    align-items: center;
+    border-radius: 16px;
+  }
+  
+  .input {
+    border-radius: 8px;
+    padding: 17px 24px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: #0d1321;
+    border-style: none;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .white {
+    color: white;
+  }
+  
+  footer {
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(13, 19, 33, 0.03);
+    padding: 80px 150px;
+  }
+  
